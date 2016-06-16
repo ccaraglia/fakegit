@@ -25,8 +25,8 @@ var params = {
     access_token: token
 }
 
-var promiseProf = $.getJSON(urlProf + genParamString(params))
-var promiseRepo = $.getJSON(urlRepo + genParamString(params))
+var promiseProf = $.getJSON(urlProf) //+ genParamString(params))
+var promiseRepo = $.getJSON(urlRepo) //+ genParamString(params))
 
 
 containerNode = document.querySelector('#container')
