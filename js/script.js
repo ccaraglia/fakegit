@@ -145,6 +145,10 @@ timeThen= new Date(dataR[i].updated_at)
 }
 
 
+promiseProf.then(createProfile)
+promiseRepo.then(createRepos)
+
+
 var getUser = function(evt) {
     console.log(evt)
     if (evt.keyCode === 13) {
@@ -161,10 +165,10 @@ var getUser = function(evt) {
         var urlUser='https://api.github.com/users/'+input
         var urlRepoSearch = 'https://api.github.com/users/'+input+'/repos'
         //var urlUserRepo
-        //gets the data per ZIP
+
         var User=$.getJSON(urlUser)
         var userRepo=$.getJSON(urlRepoSearch)
-        //console.log(zipAPI)
+
         User.then(createProfile)
         userRepo.then(createRepos)
     }
@@ -177,5 +181,3 @@ inputNode.addEventListener("keypress", getUser)
 
 
 
-promiseProf.then(createProfile)
-promiseRepo.then(createRepos)
