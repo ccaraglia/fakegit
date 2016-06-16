@@ -1,0 +1,109 @@
+* {
+    font-family: Helvetica Neue, Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #4078c0;
+    font-weight:bold;
+}
+
+#button{
+    margin: 0 auto;
+width:100%;
+background: #e5e5e5;
+padding: 1%;
+}
+
+#cat{
+    display:block;
+}
+
+#cat > * {
+    vertical-align: middle;
+}
+
+#cat p {
+    display: inline-block;
+    margin: 0;
+}
+
+#cat img{
+    max-width:35px;
+}
+
+
+body{
+    margin:0;
+}
+
+input{
+    width:50%;
+    height: 30px;
+    vertical-align: text-top;
+}
+
+input.button{
+    padding: 0 5px;
+    font-size: 18px;
+}
+    input.button:focus {
+        outline: 0;
+    }
+
+
+img {
+    max-width: 100%;
+}
+
+.col {
+    padding: 1%;
+    background:pink;
+
+}
+
+ul{
+    padding-left: 0;
+}
+
+#container {
+    display: flex;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.repoList{
+border-bottom: 2px solid black;
+
+}
+
+#rightCol {
+    flex: 3;
+    margin-left: 1%;
+    padding-left: 2%;
+}
+
+#leftCol {
+    flex: 1;
+}
+
+.followersBar{
+    display: flex;
+}
+.followersBar p{
+    text-align: center;
+}
+.number{
+    font-size: 22px;
+    margin:0;
+}
+
+.followers >p{
+    flex:1;
+    margin:0;
+}
+
+.following >p{
+    flex:1;
+    margin:0 10px;
+}
