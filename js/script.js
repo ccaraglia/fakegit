@@ -159,11 +159,11 @@ var getUser = function(evt) {
 
 
         var urlUser='https://api.github.com/users/'+input
-        var urlRepo = 'https://api.github.com/users/'+input+'/repos'
+        var urlRepoSearch = 'https://api.github.com/users/'+input+'/repos'
         //var urlUserRepo
         //gets the data per ZIP
         var User=$.getJSON(urlUser)
-        var userRepo=$.getJSON(urlRepo)
+        var userRepo=$.getJSON(urlRepoSearch)
         //console.log(zipAPI)
         User.then(createProfile)
         userRepo.then(createRepos)
